@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>OTP</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grid-basic-page">
+
+  <div style="text-align: center; margin-top: 20%;">
+    <img src="assets/img/dialog.png" style="text-align: center; max-width: 150px;">
+  </div>
+  <br/>
+  <ion-grid style="width:75%;">
+    <ion-row>
+      <ion-col>
+        <ion-input text-center style="font-size: 25px;" type="tel"  (keyup)="onKeyEvent()" [(ngModel)]="otp" maxlength="4" ></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br/>
+  <div style="text-align: center">
+    <button ion-button color="secondary" style="width: 40%;" (click)="verify();">verify</button> &nbsp;&nbsp;&nbsp;
+    <button ion-button color="danger" style="width: 40%;" (click)="resend();">Resend</button>
+  </div>
+  
+  
+  
+</ion-content>
+
+<ion-footer >
+  <ion-toolbar style="text-align: center;">
+    <b style="text-align: center; font-size: 12px;">&copy; 2017 - Developed by VAS Operations, Dialog Axiata PLC.</b>
+  </ion-toolbar>
+</ion-footer>

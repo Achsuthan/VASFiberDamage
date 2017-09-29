@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div style="text-align: center; margin-top: 20%;">
+    <img src="assets/img/dialog.png" style="text-align: center; max-width: 150px;">
+  </div>
+
+  <br/>
+  <ion-item>
+    <ion-label floating>Mobile Number</ion-label>
+    <ion-label ></ion-label>
+    <ion-input type="tel" value="" [(ngModel)]="phone" placeholder="Ex : 0777123456"></ion-input>
+  </ion-item>
+
+  <br/>
+  <div style="text-align: center">
+    <button ion-button color="secondary" style="width: 40%;" (click)="login();">Login</button> &nbsp;&nbsp;&nbsp;
+    <button ion-button color="danger" style="width: 40%;" (click)="clear();">Clear</button>
+  </div>
+  
+  
+  
+</ion-content>
+
+
+<ion-footer >
+  <ion-toolbar style="text-align: center;">
+    <b style="text-align: center; font-size: 12px;">&copy; 2017 - Developed by VAS Operations, Dialog Axiata PLC.</b>
+  </ion-toolbar>
+</ion-footer>

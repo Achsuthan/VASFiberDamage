@@ -1,0 +1,11 @@
+dam_id,Ref_ID,Pic_Path,"User Comment",lat,lng,User_ID,User_Added_Date,Time,Cuurent_Status,WIP_Date,WIP_Comment,Completed_Date,Completed_Comment,Deleted_Comment,Deleted_Date
+52,PIR170928001,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0773337006/32841600757092237.png,Jejejr,6.9187107,79.8628568,0773337006,2017-09-28,01:40:34pm,NEW,,,,,,
+51,PIR170928000,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0773337006/46938971662893889.png,Ttt,6.9187107,79.8628568,0773337006,2017-09-28,01:36:41pm,NEW,,,,,,
+50,PIR170927007,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0773337006/37885171547532081.png,Test,6.9187107,79.8628568,0773337006,2017-09-27,03:15:46pm,NEW,,,,,,
+49,PIR170927006,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0773335231/19087315630167725.png,Akbar4,6.922466,79.8610082,0773335231,2017-09-27,01:58:44pm,NEW,,,,,,
+48,PIR170927005,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0773331169/29778042901307345.png,4,6.9224207,79.8603409,0773331169,2017-09-27,01:53:03pm,NEW,,,,,,
+47,PIR170927004,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0777331257/88606973458081489.png,Indika,6.9223606,79.8604284,0777331257,2017-09-27,01:39:30pm,NEW,,,,,,
+46,PIR170927003,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0777331257/84203511802479633.png,Wow,6.9223606,79.8604284,0777331257,2017-09-27,01:37:53pm,NEW,,,,,,
+45,PIR170927002,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0777331257/95712012378498913.png,"Akbar 4th floor",6.9223606,79.8604284,0777331257,2017-09-27,01:14:05pm,WIP,2017-09-27,,,,,
+44,PIR170927001,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0773337006/66683874092996121.png,Test,6.9187314,79.8628568,0773337006,2017-09-27,12:50:38pm,WIP,2017-09-27,"informed to Mtc Contractor",,,,
+43,PIR170927000,http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/uploads/0777331257/75526822078973057.png,"Akbar 4th floor",6.9224207,79.8603409,0777331257,2017-09-27,12:45:16pm,NEW,,,,,,

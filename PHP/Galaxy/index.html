@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Galaxy</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+           <!-- <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+            <!--<li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+        </ul>
+    </div>
+</nav>
+<br/><br/>
+<div class="container" style="width: 50%;">
+    <h2>Login</h2>
+    <p>Before you visit website login first</p>
+    <form>
+        <div class="form-group">
+            <label for="usr">Username:</label>
+            <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+    </form>
+    <div class="alert alert-danger" id="alert" role="alert" style="display:none;"><b>Error : </b>Check your username and password</div>
+    <button type="button" class="btn btn-primary" onclick="login()" style="width: 50%">Login</button>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<footer class="footer" style="background-color:rgb(51, 51, 51); height: 25px;">
+    <p style="color: white;text-align: center;">&copy; 2017 — Designed &amp; Developed by Dialog</p>
+</footer>
+
+<script>
+
+    function login()
+    {
+        document.getElementById('alert').style.display = "none";
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                output = JSON.parse(this.responseText);
+                console.log(this.responseText);
+                if(output.status=="200")
+                {
+                    window.location.href="home.html";
+                }
+                else
+                {
+                    document.getElementById('alert').style.display = "block";
+                }
+
+            }
+        };
+        xmlhttp.open("GET", "http://mygelaxytest.dialog.lk/MyGalaxy/Fiber/login.php?username="+document.getElementById("usr").value+"&password="+document.getElementById("pwd").value);
+        xmlhttp.send();
+    }
+</script>
+
+</body>
+</html>
